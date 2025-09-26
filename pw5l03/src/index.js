@@ -1,7 +1,8 @@
+let apiURL = "https://jsonplaceholder.typicode.com/comments";
+
 function displayComments(response) {
   console.log(response.data);
-  console.log(response.data[0].body);
+  console.log(response.data[0].email);
 }
 
-let apiURL = "https://jsonplaceholder.typicode.com/comments";
 axios.get(apiURL).then(displayComments);
